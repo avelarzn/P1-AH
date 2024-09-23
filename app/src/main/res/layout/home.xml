@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dados para calculo"
+        android:textColor="@color/purple_500"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Montante desejado?*"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/input_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="R$"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taxa de juros anual?*"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/input_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="100%"
+        android:inputType="number|numberDecimal"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de anos?*"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/input_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Anos"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:text="Calcular Contribuição Mensal"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        android:layout_gravity="center" />
+
+</LinearLayout>
